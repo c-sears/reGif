@@ -1,0 +1,145 @@
+.click_to_gif {
+  background-color:#09afd4;
+  color:#000000;
+  outline:none;
+}
+
+#subGifSrch {
+  cursor:pointer;
+}
+
+#subGifSrch:hover {
+  color:#fff;
+}
+
+.click_to_gif {
+  font-family:'Antic';
+  width:fit-content;
+  padding:10px;
+  margin:10px;
+  font-weight:600;
+}
+
+.card-img.w-100.d-block {
+  border:4px solid #fff;
+}
+
+.card-img-overlay {
+  box-shadow:10px 10px 5px #333;
+}
+
+.rating {
+  opacity:0;
+  color:rgba(228,228,228,0.45);
+  text-shadow:3px 3px 8px #000;
+}
+
+.gif_container:hover .rating {
+  opacity:1;
+  transition:.2s;
+}
+
+.col-4.gif_container {
+  cursor:pointer;
+  margin-bottom:55px;
+  height:fit-content;
+}
+
+@media (min-width: 768px) {
+  #searchGif {
+    margin-left:43px;
+  }
+}
+
+
+
+@media (min-width: 300px) {
+  .gif_heading {
+    width:fit-content;
+    margin-left:0px;
+    padding-left:0px;
+  }
+}
+
+.saveToFave {
+  position:absolute;
+  bottom:6px;
+  right:18px;
+  font-size:2em;
+  width:50px;
+  background:0;
+  border:0;
+  color:rgb(255,44,44);
+}
+
+#fav_icon {
+  opacity:0;
+}
+
+#fav_icon:hover {
+  transition:.2s;
+  background:0;
+}
+
+.gif_box:hover #fav_icon {
+  opacity:1;
+  transition:.3s;
+}
+
+.gif_box {
+  margin-top:25px;
+}
+
+.saveToFave {
+  background:0;
+  height:fit-content;
+  width:fit-content;
+  outline: none;
+}
+
+.saveToFave:hover {
+  background:0;
+  height:fit-content;
+  width:fit-content;
+  color:rgb(255,0,153);
+}
+
+.saveToFave:active, .saveToFave:focus {
+  background: 0 !important;
+  border: 0 !important;
+  box-shadow: 0 !important;
+}
+
+.col.col-lg-4.col-md-6.col-xs-12.set-height {
+  height:fit-content;
+  margin:0;
+}
+
+@media (max-width: 576px) {
+  #sub_header {
+    width:99%;
+    margin:10px auto;
+  }
+}
+
+#sub_header {
+  background: #333;
+  /* background-image: url('https://media.giphy.com/media/3o85gd3noLuSkE4Lkc/giphy.gif');
+  background-size: contain;
+  background-position: center; */
+  border-radius:20px;
+  min-height:70px;
+}
+
+.text-center.my-auto.mx-md-auto.my-lg-auto.gif_heading {
+  line-height:1.8;
+  color:#25e24e;
+  text-shadow: 3px 3px 2px #000;
+}
+
+@media (max-width: 991px) {
+  .col-10.col-sm-7.col-md-6.col-lg-4.align-self-center.mx-auto {
+    margin-bottom:15px;
+  }
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reGif</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Armata">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body style="background-color:rgb(82,74,74);">
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand tada animated" href="#" style="color:rgba(255,255,255,0.9);font-size:46px;margin-left:14px;">reGif.</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active favorites" href="#" data-bs-hover-animate="pulse" style="font-size:18px;font-family:'Advent Pro', sans-serif;color:rgba(255,255,255,0.9);"><i class="fa fa-heart" style="color:rgba(255,0,138,0.69);font-size:19px;font-weight:normal;margin-right:5px;"></i>Favorites</a></li>
+                    <li
+                        class="nav-item" role="presentation"><a class="nav-link active" href="#" data-bs-hover-animate="pulse" id="getRandom" style="font-size:18px;font-family:'Advent Pro', sans-serif;color:rgba(97,255,0,0.9);"><i class="fa fa-random" style="color:rgba(0,240,255,0.97);font-size:19px;font-weight:normal;margin-right:5px;"></i>Random</a></li>
+                        <li
+                            class="nav-item" role="presentation"><a class="nav-link active" href="#" data-bs-hover-animate="pulse" id="clearHistory" style="font-size:18px;font-family:'Advent Pro', sans-serif;color:#000000;"><i class="fa fa-trash-o" style="color:rgba(255,0,0,0.97);font-size:20px;font-weight:normal;margin-right:5px;"></i>Clear favorites</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row" id="sub_header">
+            <div class="col-md-12 col-lg-6">
+                <h1 class="text-center my-auto mx-md-auto my-lg-auto pulse animated gif_heading" style="font-family:Armata, sans-serif;margin-right:40px;padding-top:0px;margin-top:0px;margin-left:50px;">Search for any GIF!</h1>
+            </div>
+            <div class="col-10 col-sm-7 col-md-6 col-lg-4 align-self-center mx-auto"><input class="d-inline-block" type="search" name="searchGifs" placeholder="add a gif button!" autofocus="" id="searchGif" style="height:37px;margin-bottom:0px;padding:13px;background-color:rgba(255,255,255,0.9);"><i class="fa fa-search d-inline-block"
+                    data-bs-hover-animate="swing" id="subGifSrch" style="margin-left:12px;font-size:30px;margin-top:0px;padding:0px;padding-top:0px;color:#ff00c7;"></i></div>
+        </div>
+        <div class="row">
+            <div class="col" id="buttons"></div>
+        </div>
+    </div>
+    <section style="margin-top:29px;">
+        <div class="container">
+            <div class="row justify-content-around" id="my_new_gifs">
+                
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/logic.js"></script>
+</body>
+
+</html>
